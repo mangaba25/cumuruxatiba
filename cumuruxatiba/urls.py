@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+import django.views.defaults
 
 from core import views
 from catalog import views as views_catalog
@@ -24,4 +25,5 @@ urlpatterns = [
     url(r'^contato/$', views.contact, name='contact'),
     url(r'^catalogo/', include('catalog.urls', namespace='catalog')),
     url(r'^admin/', admin.site.urls),
+    url(r'^500/$', django.views.defaults.server_error, ),
 ]
