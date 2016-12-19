@@ -1,2 +1,2 @@
 
-web: gunicorn cumuruxatiba.wsgi --log-file -
+web: gunicorn cumuruxatiba.wsgi:application
