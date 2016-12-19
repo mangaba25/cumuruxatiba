@@ -103,3 +103,5 @@ envcumuru
 
 # Sqlite
 *.sqlite3
+
+local_settings.py
